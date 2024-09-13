@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap');
+
+:root{
+    --primary:#8f00ff;
+}
+
+* {
+    font-family: "Poppins", sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-color: darkkhaki;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.box{
+    background-color: darkgrey;
+    border-width: 0 2px 1px 0;
+    border-width: solid;
+    border-color: gray;
+    box-shadow: 0 19px 41px rgba(0, 0, 0, 0.635);
+    height: 350px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+.box h2{
+    font-weight: 700;
+    line-height: 1.4;
+    color:var(--primary);
+    font-size:32px;
+}
+.box h1{
+    color:var(--primary);
+}
+#questionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+#answerInput{
+    background:transparent;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+#answerInput:focus-visible{
+    outline:1px solid var(--primary);
+    border:1px solid var(--primary);
+
+}
+#primary-btn{
+    background-color: var(--primary);
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 46px;
+}
+@media (max-width:786px){
+    .box{
+        width: 80%;
+        height:340px;
+
+    }
+}
+
+
